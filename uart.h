@@ -13,6 +13,6 @@ void uart_init(void);
 void uart_transmit(void);
 
 // Send a null-terminated string over uart
-void uard_print(const char *str);
+void uart_print(const char *str);
 
 #endif
