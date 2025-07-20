@@ -1,8 +1,8 @@
 #include "uart.h"
 
 void uart_init(void){
-    UBBR0H = (MYUBRR >> 8);
-    UBBR0L = MYUBRR;
+    UBRR0H = (MYUBRR >> 8);
+    UBRR0L = MYUBRR;
     UCSR0B = (1 << TXEN0);  // Enable TX
     UCSR0C = (1 << UCSZ01) | (1 << UCSZ00);  // 8-bit data, 1 stop, no parity
 }
