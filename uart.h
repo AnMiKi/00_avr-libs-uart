@@ -10,7 +10,7 @@
 void uart_init(void);
 
 // Send a single byte over uart
-void uart_transmit(void);
+void uart_transmit(char data);
 
 // Send a null-terminated string over uart
 void uard_print(const char *str);
